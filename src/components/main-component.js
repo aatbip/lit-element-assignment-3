@@ -8,7 +8,11 @@ import { LitElement, html, css } from 'lit';
 
 import './paperInput-component';
 import './dataPicker-component';
-import './paperDialogue-component'; 
+import './paperDialogue-component';
+
+import '@polymer/paper-dialog/paper-dialog.js';
+
+import '@polymer/paper-dialog-scrollable/paper-dialog-scrollable.js';
 
 export class MainComponent extends LitElement {
   static get styles() {
@@ -20,6 +24,11 @@ export class MainComponent extends LitElement {
       .wrapper {
         width: 80%;
         margin: 0 auto;
+      }
+
+      paper-dialogue-component{
+        width: 500px; 
+        height: 500px; 
       }
     `;
   }
