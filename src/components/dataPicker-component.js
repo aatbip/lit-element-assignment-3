@@ -10,18 +10,15 @@ import '@vaadin/vaadin-date-picker/vaadin-date-picker.js';
 
 export class DatePickerComponent extends LitElement {
   static get styles() {
-   return css`
+    return css`
       vaadin-date-picker {
         width: 100%;
       }
     `;
   }
-  constructor() {
-    super();
-  }
 
   render() {
-    return html` <vaadin-date-picker label="date"> </vaadin-date-picker> `;
+    return html` <vaadin-date-picker label="Date"> </vaadin-date-picker> `;
   }
 }
 

@@ -9,6 +9,8 @@ import { LitElement, html, css } from 'lit';
 import './paperInput-component';
 import './dataPicker-component';
 import './paperDialogue-component';
+import './userComment-component';
+import './button-component';
 
 import '@polymer/paper-dialog/paper-dialog.js';
 
@@ -22,37 +24,12 @@ export class MainComponent extends LitElement {
       }
 
       .wrapper {
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
-      }
-
-      paper-dialogue-component{
-        width: 500px; 
-        height: 500px; 
+        box-shadow: 0 8px 4px 1px gray;
+        padding: 20px 20px;
       }
     `;
-  }
-
-  static get properties() {
-    return {
-      /**
-       * The name to say "Hello" to.
-       *
-       * @type {string}
-       */
-      name: { type: String },
-
-      /**
-       * The number of times the button has been clicked.
-       *
-       * @type {number}
-       */
-      count: { type: Number },
-    };
-  }
-
-  constructor() {
-    super();
   }
 
   render() {
@@ -63,6 +40,8 @@ export class MainComponent extends LitElement {
           <paper-input-component></paper-input-component>
           <date-component></date-component>
           <paper-dialogue-component></paper-dialogue-component>
+          <user-comment-component></user-comment-component>
+          <button-component></button-component>
         </div>
       </div>
     `;

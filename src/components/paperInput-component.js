@@ -22,40 +22,19 @@ export class PaperInputComponent extends LitElement {
     `;
   }
 
-  static get properties() {
-    return {
-      /**
-       * The name to say "Hello" to.
-       *
-       * @type {string}
-       */
-      name: { type: String },
-
-      /**
-       * The number of times the button has been clicked.
-       *
-       * @type {number}
-       */
-      count: { type: Number },
-    };
-  }
-
-  constructor() {
-    super();
-  }
-
   render() {
     return html`
-      <paper-input id="paper-input-to-left" label="name" value=""></paper-input>
-      <paper-input label="Ligands Promoted" value=""></paper-input>
+      <paper-input id="paper-input-to-left" label="Name" value=""></paper-input>
+      <paper-input label="Ligands Promoted" disabled value="24"></paper-input>
       <paper-input
         id="paper-input-to-left"
-        label="description"
+        label="Description"
         value=""
       ></paper-input>
       <paper-input
         label="Total Ligands in Binding Group"
-        value=""
+        disabled
+        value="100"
       ></paper-input>
     `;
   }
